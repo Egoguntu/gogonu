@@ -1,0 +1,84 @@
+name: Gasku
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go: [1.0, 1.1, 1.2, 1.9]
+        flag: [A, B, C, D, E, F, G, H, I, J]
+    timeout-minutes: 350
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: Runner
+      run: |
+          echo "a"
+  build1:
+    name: Build1
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go: [1.0, 1.1, 1.2, 1.9]
+        flag: [A, B, C, D, E, F, G, H, I, J]
+    timeout-minutes: 350
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: Runner
+      run: |
+          echo "a"
+  build2:
+    name: Build2
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go: [1.0, 1.1, 1.2, 1.9]
+        flag: [A, B, C, D, E, F, G, H, I, J]
+    timeout-minutes: 350
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: Runner
+      run: |
+          echo "a"
+  build3:
+    name: Build3
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go: [1.0, 1.1, 1.2, 1.9]
+        flag: [A, B, C, D, E, F, G, H, I, J]
+    timeout-minutes: 350
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: Runner
+      run: |
+          echo "a"
